@@ -5,8 +5,13 @@
 #include <sys/wait.h>
 #include <sys/types.h>
 
-//#define DEBUG
+/*//#define DEBUG*/
 #define BUFSIZE 100
+/*
+ *the n_0 function for get the string '\n' to '\0' or '0
+ *    as the fgets() will give the str a '\n'
+ *    NO usful for this one . 
+ */
 
 char *n_0(char *st);
 
@@ -56,7 +61,7 @@ int main(int argc, char *argv[])
             //ex = n_0(argv[1]);
             if((execlp(argv[1], argv[1], (char *)0))==-1)
             {
-                printf("execvp error!!\n");
+                printf("exec error!!\n");
                 exit(0);
             }
             break;
