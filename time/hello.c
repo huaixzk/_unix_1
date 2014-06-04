@@ -1,7 +1,11 @@
 #include <stdio.h>
-
-int main()
+int func();
+int main(int argc, char *argv[])
 {
-    printf("ahello,worldtest\n");
- //   return 20;
+    char a[] ="abc";
+    *a = 'A';
+}
+int func(int c)
+{
+
 }

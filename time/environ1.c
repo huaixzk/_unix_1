@@ -4,7 +4,7 @@
     extern char **environ;
 int main(int argc, char *argv[])
 {
-    printf("NULL??###%c$$$\n",argv[argc]);
+   // printf("NULL??###%c$$$\n",argv[argc]);
     
     while(*environ != NULL)
     printf("%s\n", *environ++);
