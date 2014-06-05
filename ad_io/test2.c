@@ -16,7 +16,10 @@ int main(void)
         puts("fgets error\n");
         exit(1);
     }
-    
+    if(getenv("PAGER") == NULL)
+        printf("get it\n");
+
+    //printf("%s\n", getenv("PAGER"));   
     printf("%s\t%d\n", buf, strlen(buf));
     printf("%s\t%d\n", buf, _strlen(buf));
 
